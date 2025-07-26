@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saifullah Daraz Store</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background-color: #f85606;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      font-size: 22px;
+      margin: 0;
+    }
+
+    .lang-buttons {
+      display: flex;
+      gap: 8px;
+    }
+
+    .lang-buttons button {
+      padding: 4px 10px;
+      background-color: white;
+      color: #f85606;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .tiktok-link {
+      background-color: white;
+      color: #f85606;
+      padding: 6px 10px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin: 10px 20px;
+      border-radius: 4px;
+    }
+
+    .banner {
+      width: 100%;
+      height: 150px;
+      background: url('https://icms-image.slatic.net/images/ims-web/e260cd6d-d464-4b6b-a273-630ffc3efb60.jpg') center/cover no-repeat;
+    }
+
+    .categories {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      padding: 10px 10px 50px 10px;
+    }
+
+    .product-card {
+      background-color: white;
+      border-radius: 5px;
+      padding: 8px;
+      position: relative;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 4px;
+    }
+
+    .product-name {
+      font-weight: bold;
+      margin-top: 6px;
+      font-size: 15px;
+    }
+
+    .discount {
+      color: green;
+      font-size: 14px;
+      margin-top: 2px;
+    }
+
+    .price {
+      font-size: 14px;
+      font-weight: bold;
+      margin-top: 2px;
+    }
+
+    .buy-btn {
+      background-color: #f85606;
+      color: white;
+      border: none;
+      padding: 6px 10px;
+      font-size: 13px;
+      border-radius: 4px;
+      margin-top: 6px;
+      cursor: pointer;
+    }
+
+    .badge {
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      background-color: #f85606;
+      color: white;
+      padding: 2px 6px;
+      font-size: 12px;
+      border-radius: 3px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .products {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Saifullah Daraz Store</h1>
+  <div class="lang-buttons">
+    <button>English</button>
+    <button>اردو</button>
+  </div>
+</header>
+
+<a class="tiktok-link" href="https://www.tiktok.com/@yourprofile" target="_blank">📱 TikTok Profile</a>
+
+<div class="banner"></div>
+
+<div class="categories">
+  🔥 <b>50%+ Off Trending Deals</b> <br/>
+  Mobiles · Fashion · Electronics · Home & Living · Beauty · More...
+</div>
+
+<div class="products">
+  <div class="product-card">
+    <div class="badge">50% OFF</div>
+    <img src="https://static-01.daraz.pk/p/1b0d9492e1ed3c16e3fc94b3c3e4d986.jpg" alt="Product 1"/>
+    <div class="product-name">Bluetooth Earbuds</div>
+    <div class="discount">Rs. 1,499</div>
+    <button class="buy-btn">Buy Now</button>
+  </div>
+
+  <div class="product-card">
+    <div class="badge">60% OFF</div>
+    <img src="https://static-01.daraz.pk/p/564a1c37f5d69b172c198b3bb0136a1e.jpg" alt="Product 2"/>
+    <div class="product-name">Smart Watch</div>
+    <div class="discount">Rs. 2,299</div>
+    <button class="buy-btn">Buy Now</button>
+  </div>
+
+  <div class="product-card">
+    <div class="badge">55% OFF</div>
+    <img src="https://static-01.daraz.pk/p/8b631fe53f2e188fa43b7a87c4d2a733.jpg" alt="Product 3"/>
+    <div class="product-name">Ring Light</div>
+    <div class="discount">Rs. 999</div>
+    <button class="buy-btn">Buy Now</button>
+  </div>
+
+  <div class="product-card">
+    <div class="badge">52% OFF</div>
+    <img src="https://static-01.daraz.pk/p/4a5b1ecf63c8c90b8c6f32d34b774b4e.jpg" alt="Product 4"/>
+    <div class="product-name">Phone Tripod</div>
+    <div class="discount">Rs. 699</div>
+    <button class="buy-btn">Buy Now</button>
+  </div>
+</div><div class="product-card">
+  <span class="badge">SALE</span>
+  <img src="https://via.placeholder.com/200x200?text=Smart+Watch" alt="Smart Watch">
+  <h3>Smart Watch Series 8</h3>
+  <p class="price">Rs. 2,499 <span class="old-price">Rs. 5,000</span></p>
+  <a href="#" class="buy-btn">Buy Now</a>
+</div>
+
+<div class="product-card">
+  <span class="badge">SALE</span>
+  <img src="https://via.placeholder.com/200x200?text=Wireless+Earbuds" alt="Wireless Earbuds">
+  <h3>Wireless Earbuds Pro</h3>
+  <p class="price">Rs. 1,899 <span class="old-price">Rs. 4,000</span></p>
+  <a href="#" class="buy-btn">Buy Now</a>
+</div>
+
+<div class="product-card">
+  <span class="badge">SALE</span>
+  <img src="https://via.placeholder.com/200x200?text=Bluetooth+Speaker" alt="Bluetooth Speaker">
+  <h3>Portable Bluetooth Speaker</h3>
+  <p class="price">Rs. 1,299 <span class="old-price">Rs. 2,600</span></p>
+  <a href="#" class="buy-btn">Buy Now</a>
+</div>
+
+<div class="product-card">
+  <span class="badge">SALE</span>
+  <img src="https://via.placeholder.com/200x200?text=LED+Ring+Light" alt="LED Ring Light">
+  <h3>LED Ring Light 18"</h3>
+  <p class="price">Rs. 3,199 <span class="old-price">Rs. 6,500</span></p>
+  <a href="#" class="buy-btn">Buy Now</a>
+</div>
+
+<div class="product-card">
+  <span class="badge">SALE</span>
+  <img src="https://via.placeholder.com/200x200?text=Power+Bank" alt="Power Bank">
+  <h3>20,000mAh Power Bank</h3>
+  <p class="price">Rs. 2,099 <span class="old-price">Rs. 4,200</span></p>
+  <a href="#" class="buy-btn">Buy Now</a>
+</div>
+
+<div class="product-card">
+  <span class="badge">SALE</span>
+  <img src="https://via.placeholder.com/200x200?text=Mobile+Holder" alt="Mobile Holder">
+  <h3>Flexible Mobile Holder</h3>
+  <p class="price">Rs. 349 <span class="old-price">Rs. 800</span></p>
+  <a href="#" class="buy-btn">Buy Now</a>
+</div>
+
+<div class="product-card">
+  <span class="badge">SALE</span>
+  <img src="https://via.placeholder.com/200x200?text=Hair+Dryer" alt="Hair Dryer">
+  <h3>Professional Hair Dryer</h3>
+  <p class="price">Rs. 1,499 <span class="old-price">Rs. 3,000</span></p>
+  <a href="#" class="buy-btn">Buy Now</a>
+</div>
+
+<div class="product-card">
+  <span class="badge">SALE</span>
+  <img src="https://via.placeholder.com/200x200?text=Electric+Kettle" alt="Electric Kettle">
+  <h3>1.7L Electric Kettle</h3>
+  <p class="price">Rs. 1,199 <span class="old-price">Rs. 2,400</span></p>
+  <a href="#" class="buy-btn">Buy Now</a>
+</div>
+
+<div class="product-card">
+  <span class="badge">SALE</span>
+  <img src="https://via.placeholder.com/200x200?text=Tripod" alt="Tripod Stand">
+  <h3>Adjustable Tripod Stand</h3>
+  <p class="price">Rs. 799 <span class="old-price">Rs. 1,600</span></p>
+  <a href="#" class="buy-btn">Buy Now</a>
+</div>
+
+<div class="product-card">
+  <span class="badge">SALE</span>
+  <img src="https://via.placeholder.com/200x200?text=Smart+Scale" alt="Smart Scale">
+  <h3>Bluetooth Smart Weight Scale</h3>
+  <p class="price">Rs. 2,599 <span class="old-price">Rs. 5,200</span></p>
+  <a href="#" class="buy-btn">Buy Now</a>
+</div>
+
+<!-- مزید 10 پروڈکٹس نیچے ہیں -->
+
+<div class="product-card">
+  <span class="badge">SALE</span>
+  <img src="https://via.placeholder.com/200x200?text=Neck+Massager" alt="Neck Massager">
+  <h3>Neck & Shoulder Massager</h3>
+  <p class="price">Rs. 3,699 <span class="old-price">Rs. 7,500</span></p>
+  <a href="#" class="buy-btn">Buy Now</a>
+</div>
+
+<div class="product-card">
+  <span class="badge">SALE</span>
+  <img src="https://via.placeholder.com/200x200?text=Laptop+Table" alt="Laptop Table">
+  <h3>Foldable Laptop Table</h3>
+  <p class="price">Rs. 999 <span class="old-price">Rs. 2,000</span></p>
+  <a href="#" class="buy-btn">Buy Now</a>
+</div>
+
+<div class="product-card">
+  <span class="badge">SALE</span>
+  <img src="https://via.placeholder.com/200x200?text=Wireless+Mouse" alt="Wireless Mouse">
+  <h3>Rechargeable Wireless Mouse</h3>
+  <p class="price">Rs. 649 <span class="old-price">Rs. 1,300</span></p>
+  <a href="#" class="buy-btn">Buy Now</a>
+</div>
+
+<div class="product-card">
+  <span class="badge">SALE</span>
+  <img src="https://via.placeholder.com/200x200?text=Face+Steamer" alt="Face Steamer">
+  <h3>Electric Face Steamer</h3>
+  <p class="price">Rs. 899 <span class="old-price">Rs. 1,800</span></p>
+  <a href="#" class="buy-btn">Buy Now</a>
+</div>
+
+<div class="product-card">
+  <span class="badge">SALE</span>
+  <img src="https://via.placeholder.com/200x200?text=Makeup+Kit" alt="Makeup Kit">
+  <h3>Premium Makeup Kit Set</h3>
+  <p class="price">Rs. 1,799 <span class="old-price">Rs. 3,600</span></p>
+  <a href="#" class="buy-btn">Buy Now</a>
+</div>
+
+<div class="product-card">
+  <span class="badge">SALE</span>
+  <img src="https://via.placeholder.com/200x200?text=Mini+Chopper" alt="Mini Chopper">
+  <h3>Electric Mini Chopper</h3>
+  <p class="price">Rs. 799 <span class="old-price">Rs. 1,600</span></p>
+  <a href="#" class="buy-btn">Buy Now</a>
+</div>
+
+<div class="product-card">
+  <span class="badge">SALE</span>
+  <img src="https://via.placeholder.com/200x200?text=Vacuum+Cleaner" alt="Vacuum Cleaner">
+  <h3>Portable Vacuum Cleaner</h3>
+  <p class="price">Rs. 2,499 <span class="old-price">Rs. 5,000</span></p>
+  <a href="#" class="buy-btn">Buy Now</a>
+</div>
+
+<div class="product-card">
+  <span class="badge">SALE</span>
+  <img src="https://via.placeholder.com/200x200?text=Gaming+Keyboard" alt="Gaming Keyboard">
+  <h3>RGB Gaming Keyboard</h3>
+  <p class="price">Rs. 1,599 <span class="old-price">Rs. 3,200</span></p>
+  <a href="#" class="buy-btn">Buy Now</a>
+</div>
+
+<div class="product-card">
+  <span class="badge">SALE</span>
+  <img src="https://via.placeholder.com/200x200?text=Hand+Blender" alt="Hand Blender">
+  <h3>Electric Hand Blender</h3>
+  <p class="price">Rs. 1,199 <span class="old-price">Rs. 2,400</span></p>
+  <a href="#" class="buy-btn">Buy Now</a>
+</div>
+
+<div class="product-card">
+  <span class="badge">SALE</span>
+  <img src="https://via.placeholder.com/200x200?text=Backpack" alt="Backpack">
+  <h3>Waterproof Laptop Backpack</h3>
+  <p class="price">Rs. 1,399 <span class="old-price">Rs. 2,800</span></p>
+  <a href="#" class="buy-btn">Buy Now</a>
+</div>
+
+</body>
+</html>
